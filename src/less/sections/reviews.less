@@ -1,0 +1,146 @@
+.reviews {
+  background-color: @gray-color;
+  &__nav {
+    .bold(@small-text);
+    margin: 78px auto 70px;
+    max-width: 680px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+
+    &-button {
+      padding: 5px 10px;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        color: @primary-color;
+      }
+
+      &.active {
+        border-color: @primary-color;
+        color: @primary-color;
+      }
+    }
+  }
+
+  &__slider {
+    margin: 0 -10px;
+
+    &-item {
+      margin: 0 10px;
+    }
+
+    &-vid {
+      background-color: #eeeeee;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      // max-width: 300px;
+
+      &_pad {
+        position: relative;
+        width: 100%;
+        padding-bottom: calc(100% / 1.42);
+      }
+
+      &_inner {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .iframe-video {
+        border: none;
+      }
+    }
+
+    &-playbutton {
+      border: 2px solid #ffffff;
+      width: 27px;
+      height: 27px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      border-radius: 50%;
+      margin: 20px;
+      background-color: transparent;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        border: 5px solid transparent;
+        border-left-color: #ffffff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-20%, -50%);
+      }
+
+      &_shadow {
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        bottom: 0;
+        background: linear-gradient(
+          to top,
+          rgba(@black-color, 0.8),
+          rgba(@black-color, 0)
+        );
+      }
+    }
+
+    &-link {
+      font-size: 13px;
+
+      &:hover {
+        color: @primary-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &-next,
+  &-prev {
+    transform: translateY(-100%);
+  }
+
+  &-next {
+    right: -10%;
+  }
+
+  &-prev {
+    left: -10%;
+  }
+
+  .to(1170px, {
+    &-next,
+    &-prev {
+      padding: 10px;
+      background-color: rgba(@gray-color, 0.4);
+    }
+
+    &-next {
+      right: 0px;
+    }
+  
+    &-prev {
+      left: 0px;
+    }
+  });
+}

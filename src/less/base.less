@@ -1,0 +1,160 @@
+.reset();
+
+* {
+  outline: none;
+}
+
+html {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Proxima Nova Light", Verdana, sans-serif;
+  font-size: @small-text;
+  font-weight: 200;
+}
+
+section {
+  padding: 95px 0 99px;
+}
+
+a {
+  text-decoration: none;
+  color: @black-color;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.container {
+  .wrapper();
+}
+
+.light(@fs: 16px) {
+  font-family: "Proxima Nova Light", sans-serif;
+  font-size: @fs;
+}
+
+.bold(@fs: 16px) {
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: @fs;
+}
+
+.section-title {
+  letter-spacing: 0.3px;
+  text-align: center;
+  .bold(30px);
+}
+
+.main-button {
+  display: inline-block;
+  text-align: center;
+  .bold(@large-text);
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 22px 0;
+  background: linear-gradient(360deg, @primary-dark, @primary-color);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #0e0e0e;
+  &__logo {
+    margin: 50px 0;
+  }
+  .xs(text-align, center);
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: @primary-dark;
+  border-radius: 5px;
+  outline: none;
+  display: none;
+
+  &_symb {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    transform: translateY(25%) rotate(45deg);
+  }
+}
+
+.arrow {
+  background: none;
+  font-size: 30px;
+  color: darken(@gray-color, 25%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  &:hover {
+    color: darken(@gray-color, 35%);
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.body-shadow {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: @black-color;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(@black-color, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+
+  &-window {
+    position: relative;
+    background-color: #ffffff;
+    width: 280px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  &-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: @gray-color;
+    z-index: 15;
+    border-radius: 3px;
+  }
+
+  &-message {
+    display: none;
+    .bold(20px);
+    text-align: center;
+    margin: 100px 0;
+
+    &.active {
+      display: block;
+    }
+  }
+}

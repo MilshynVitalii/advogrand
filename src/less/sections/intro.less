@@ -1,0 +1,41 @@
+.intro {
+  padding: 120px 0 130px;
+  background: #7c7b77 url(../images/intro-bg.jpg) no-repeat center;
+  color: #fff;
+
+  &-title {
+    line-height: 1.4;
+    letter-spacing: 1px;
+    max-width: 470px;
+    .bold(30px);
+
+    &_large {
+      font-weight: 700;
+      .bold(40px);
+      text-transform: uppercase;
+    }
+  }
+
+  &-subtitle {
+    font-size: 24px;
+    max-width: 466px;
+    margin-top: 45px;
+    margin-bottom: 60px;
+    line-height: 1.3;
+
+    &_bold {
+      font-weight: 700;
+      .bold(24px);
+    }
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .xs-block({
+    background: none;
+    background-color: #7c7b77;
+  });
+}

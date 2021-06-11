@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advogrand</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="preload" as="font" href="./fonts/ProximaNova-Bold.woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/ProximaNova-Light.woff" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__nav-container">
+          <nav class="header__nav">
+            <a href="tel:+74993228580" class="header__nav-tel"
+              >+7 499 322-85-80</a
+            >
+            <button type="button" class="header__burger" aria-label="burger menu">
+              <span class="header__burger-line header__burger-line_f"></span>
+              <span class="header__burger-line header__burger-line_s"></span>
+              <span class="header__burger-line header__burger-line_th"></span>
+            </button>
+
+            <ul class="header__navigation">
+              <li class="header__navigation-item">
+                <a href="#stages" class="header__navigation-link"
+                  >Как мы работаем</a
+                >
+              </li>
+
+              <li class="header__navigation-item">
+                <a href="#benefits" class="header__navigation-link"
+                  >Преимущества</a
+                >
+              </li>
+
+              <li class="header__navigation-item">
+                <a href="#reviews" class="header__navigation-link">Отзывы</a>
+              </li>
+
+              <li class="header__navigation-item">
+                <a href="#tariffs" class="header__navigation-link">Тарифы</a>
+              </li>
+
+              <li class="header__navigation-item">
+                <a href="#partners" class="header__navigation-link">Партнеры</a>
+              </li>
+
+              <li class="header__navigation-item">
+                <a href="#contacts" class="header__navigation-link">Контакты</a>
+              </li>
+            </ul>
+            <button id="open-modal" type="button" class="header__nav-button">
+              Перезвонить мне
+            </button>
+          </nav>
+        </div>
+        <div class="header__descr">
+          <a href="#">
+            <picture>
+              <source type="image/webp" srcset="./images/logo.webp">
+              <img
+              src="./images/logo.png"
+              width="190"
+              height="40"
+              alt="logo"
+              class="header__descr-logo"
+            />
+            </picture>
+          </a>
+          <div class="header__descr-text">Ваш личный юрист всегда на связи</div>
+          <a href="tel:+74993228580" class="header__descr-tel"
+            >+7 499 322-85-80</a
+          >
+          <div class="header__descr-buttons">
+            <a href="#" class="header__descr-apple">
+              <picture>
+                <source srcset="./images/android.webp" type="image/webp">
+                <img src="./images/android.png" width="19" height="21" alt="androoid-icon"/>
+              </picture>
+            </a>
+            <a href="#" class="header__descr-android">
+              <picture>
+                <source srcset="./images/apple.webp" type="image/webp">
+                <img src="./images/apple.png" width="16" height="20" alt="apple-icon"/>
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="intro">
+      <div class="container">
+        <h1 class="intro-title">
+          Годовой абонемент на услуги <br>
+          <span class="intro-title_large">«личного юриста»</span>
+        </h1>
+        <h2 class="intro-subtitle">
+          24 часа в сутки Ваш личный юрист –
+          <span class="intro-subtitle_bold">Advogrand</span>
+          на связи <br />
+          всего
+          <span class="intro-subtitle_bold">за 12 рублей в день</span>
+        </h2>
+        <a href="#" class="main-button intro__button">Хочу «личного юриста»!</a>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="section-title">Услуги предоставляемые сервисом Advogrand</h2>
+        <div class="services__items">
+          <div class="services__item">
+            <picture>
+              <source srcset="./images/services/icon-1.webp" type="image/webp">
+              <img
+              src="./images/services/icon-1.png"
+              width="46"
+              height="46"
+              alt="item-icon"
+              loading="lazy"
+              class="services__item-icon"
+            />
+            </picture>
+            <a href="#" class="services__item-link">Устные консультации</a>
+          </div>
+          <div class="services__item">
+            <picture>
+              <source srcset="./images/services/icon-2.webp" type="image/webp">
+              <img
+              src="./images/services/icon-2.png"
+              width="45"
+              height="43"
+              alt="item-icon"
+              loading="lazy"
+              class="services__item-icon"
+            />
+            </picture>
+            <a href="#" class="services__item-link">Звонок юриста</a>
+          </div>
+          <div class="services__item">
+            <picture>
+              <source srcset="./images/services/icon-3.webp" type="image/webp">
+              <img
+              src="./images/services/icon-3.png"
+              width="39"
+              height="49"
+              alt="item-icon"
+              loading="lazy"
+              class="services__item-icon"
+            />
+            </picture>
+            <a href="#" class="services__item-link">Модели договора</a>
+          </div>
+          <div class="services__item">
+            <picture>
+              <source srcset="./images/services/icon-4.webp" type="image/webp">
+              <img
+              src="./images/services/icon-4.png"
+              width="39"
+              height="45"
+              alt="item-icon"
+              loading="lazy"
+              class="services__item-icon"
+            />
+            </picture>
+            <a href="#" class="services__item-link"
+              >Устные бизнес-консультации</a
+            >
+          </div>
+          <div class="services__item">
+            <picture>
+              <source srcset="./images/services/icon-5.webp" type="image/webp">
+              <img
+              src="./images/services/icon-5.png"
+              width="46"
+              height="46"
+              alt="item-icon"
+              loading="lazy"
+              class="services__item-icon"
+            />
+            </picture>
+            <a href="#" class="services__item-link">Содействие в переговорах</a>
+          </div>
+          <div class="services__item">
+            <picture>
+              <source srcset="./images/services/icon-6.webp" type="image/webp">
+              <img
+              src="./images/services/icon-6.png"
+              width="35"
+              height="46"
+              alt="item-icon"
+              loading="lazy"
+              class="services__item-icon"
+            />
+            </picture>
+            <a href="#" class="services__item-link"
+              >Обзор изменений в законодательстве</a
+            >
+          </div>
+          <div class="services__item">
+            <picture>
+              <source srcset="./images/services/icon-7.webp" type="image/webp">
+              <img
+              src="./images/services/icon-7.png"
+              width="44"
+              height="46"
+              alt="item-icon"
+              loading="lazy"
+              class="services__item-icon"
+            />
+            </picture>
+            <a href="#" class="services__item-link">Письменные консультации</a>
+          </div>
+          <div class="services__item">
+            <picture>
+              <source srcset="./images/services/icon-8.webp" type="image/webp">
+              <img
+              src="./images/services/icon-8.png"
+              width="44"
+              height="47"
+              alt="item-icon"
+              loading="lazy"
+              class="services__item-icon"
+            />
+            </picture>
+            <a href="#" class="services__item-link"
+              >Консультации в отношении третьих лиц</a
+            >
+          </div>
+          <div class="services__item">
+            <picture>
+              <source srcset="./images/services/icon-9.webp" type="image/webp">
+              <img
+              src="./images/services/icon-9.png"
+              width="46"
+              height="46"
+              alt="item-icon"
+              loading="lazy"
+              class="services__item-icon"
+            />
+            </picture>
+            <a href="#" class="services__item-link">Все области права</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboutus">
+      <div class="container">
+        <h2 class="section-title">О сервисе Advogrand</h2>
+        <p class="aboutus__text">
+          В составе нашей команды трудятся профессионалы, имеющие огромный опыт
+          реальной юридической практики. Благодаря этому мы всегда можем найти
+          юридически верное решение, защищающее интересы, сглаживающее
+          конфликтные ситуации.
+        </p>
+        <p class="aboutus__text">
+          Наше абонентское обслуживание позволяет сохранить нашим клиентам
+          время, деньги и душевное спокойствие, ведь ваши интересы находятся под
+          круглосуточной защитой «личного адвоката».
+        </p>
+        <div class="aboutus__block">
+          <div class="aboutus__block-info info">
+            <span class="info__large">9</span>
+            <span class="info__descr">лет на российском рынке</span>
+          </div>
+          <div class="aboutus__block-info info">
+            <span class="info__large">289</span>
+            <span class="info__descr">квалифицированных специалистов</span>
+          </div>
+          <div class="aboutus__block-info info">
+            <span class="info__large"
+              ><small>&rsaquo;</small>2,5<small>млн.</small></span
+            >
+            <span class="info__descr">решенных вопросов</span>
+          </div>
+          <div class="aboutus__block-info info">
+            <span class="info__large">3</span>
+            <span class="info__descr">работаем в 3-х странах мира</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stages" id="stages">
+      <div class="container">
+        <h2 class="section-title">Как оказывается услуга</h2>
+        <div class="stages__items">
+          <div class="stages__item">
+            <picture>
+              <source srcset="./images/stages/icon-1.webp" type="image/webp">
+              <img
+              src="./images/stages/icon-1.png"
+              width="100"
+              height="90"
+              alt="stages-icon"
+              loading="lazy"
+              class="stages__item-img"
+            />
+            </picture>
+            <span class="stages__item-text"
+              >Появился вопрос – звоните по бесплатному номеру</span
+            >
+          </div>
+          <div class="stages__item">
+            <picture>
+              <source srcset="./images/stages/icon-2.webp" type="image/webp">
+              <img
+              src="./images/stages/icon-2.png"
+              width="130"
+              height="84"
+              alt="stages-icon"
+              loading="lazy"
+              class="stages__item-img"
+            />
+            </picture>
+            <span class="stages__item-text"
+              >Описываете ситуацию – получаете ответ в течении 15 минут</span
+            >
+          </div>
+          <div class="stages__item">
+            <picture>
+              <source srcset="./images/stages/icon-3.webp" type="image/webp">
+              <img
+              src="./images/stages/icon-3.png"
+              width="121"
+              height="72"
+              alt="stages-icon"
+              loading="lazy"
+              class="stages__item-img"
+            />
+            </picture>
+            <span class="stages__item-text stages__item-text_bold"
+              >Ваш вопрос решен!</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <h2 class="section-title">
+          Преимущество сервиса Advogrand <br />
+          по сравнению с другими юридическими компаниями
+        </h2>
+        <div class="benefits__wrap">
+          <table class="benefits__table">
+            <tr class="benefits__table-row">
+              <th class="benefits__table-head pt"></th>
+              <th class="benefits__table-head benefits__table-head_green pt">
+                Advogrand
+              </th>
+              <th class="benefits__table-head br bt pt">
+                Юридические компании
+              </th>
+            </tr>
+            <tr class="benefits__table-row">
+              <td class="benefits__table-cell benefits__table-cell_align">
+                Одна консультация
+              </td>
+              <td class="benefits__table-cell benefits__table-cell_green">
+                От 120 руб
+              </td>
+              <td class="benefits__table-cell br">Более 1000 руб</td>
+            </tr>
+            <tr class="benefits__table-row">
+              <td class="benefits__table-cell benefits__table-cell_align">
+                Дополнительные услуги
+              </td>
+              <td class="benefits__table-cell benefits__table-cell_green">
+                Входят в абонемент
+              </td>
+              <td class="benefits__table-cell br">Оплачиваются отдельно</td>
+            </tr>
+            <tr class="benefits__table-row">
+              <td class="benefits__table-cell benefits__table-cell_align">
+                Решение вопроса
+              </td>
+              <td class="benefits__table-cell benefits__table-cell_green">
+                По телефону
+              </td>
+              <td class="benefits__table-cell br">В офисе</td>
+            </tr>
+            <tr class="benefits__table-row">
+              <td class="benefits__table-cell benefits__table-cell_align">
+                Время работы
+              </td>
+              <td class="benefits__table-cell benefits__table-cell_green">
+                Круглосуточно
+              </td>
+              <td class="benefits__table-cell br">С 9:00 до 18:00</td>
+            </tr>
+            <tr class="benefits__table-row">
+              <td class="benefits__table-cell benefits__table-cell_align pb">
+                Оплата
+              </td>
+              <td class="benefits__table-cell benefits__table-cell_green pb">
+                Всего 1 раз в год
+              </td>
+              <td class="benefits__table-cell br bb pb">
+                Каждый раз при обращении
+              </td>
+            </tr>
+          </table>
+          <div class="benefits__aside">
+            <div class="benefits__aside-header">
+              Нашими услугами уже пользуются:
+            </div>
+            <ul class="benefits__aside-list">
+              <li class="benefits__aside-item">
+                <picture>
+                  <source srcset="./images/benefits/icon-1.webp" type="image/webp">
+                  <img
+                  src="./images/benefits/icon-1.png"
+                  width="23"
+                  height="25"
+                  alt="benefits-icon"
+                  loading="lazy"
+                  class="benefits__aside-icon"
+                />
+                </picture>
+                <span class="benefits__aside-text">
+                  <span class="benefits__aside-text_bold">208 000</span>
+                  - мужчин
+                </span>
+              </li>
+              <li class="benefits__aside-item">
+                <picture>
+                  <source srcset="./images/benefits/icon-2.webp" type="image/webp">
+                  <img
+                  src="./images/benefits/icon-2.png"
+                  width="20"
+                  height="25"
+                  alt="benefits-icon"
+                  loading="lazy"
+                  class="benefits__aside-icon"
+                />
+                </picture>
+                <span class="benefits__aside-text">
+                  <span class="benefits__aside-text_bold">137 000</span>
+                  - женщин
+                </span>
+              </li>
+              <li class="benefits__aside-item">
+                <picture>
+                  <source srcset="./images/benefits/icon-3.webp" type="image/webp">
+                  <img
+                  src="./images/benefits/icon-3.png"
+                  width="25"
+                  height="22"
+                  alt="benefits-icon"
+                  loading="lazy"
+                  class="benefits__aside-icon"
+                />
+                </picture>
+                <span class="benefits__aside-text">
+                  <span class="benefits__aside-text_bold">63 000</span>
+                  - семейных пар
+                </span>
+              </li>
+              <li class="benefits__aside-item">
+                <picture>
+                  <source srcset="./images/benefits/icon-4.webp" type="image/webp">
+                  <img
+                  src="./images/benefits/icon-4.png"
+                  width="23"
+                  height="25"
+                  alt="benefits-icon"
+                  loading="lazy"
+                  class="benefits__aside-icon"
+                />
+                </picture>
+                <span class="benefits__aside-text">
+                  <span class="benefits__aside-text_bold">13 500</span>
+                  - предпринимателей
+                </span>
+              </li>
+            </ul>
+            <a href="#" class="main-button benefits__aside-button"
+              >Узнать больше</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consultation">
+      <div class="container">
+        <div class="consultation__wrap">
+          <div class="consultation__block">
+            <h2 class="section-title consultation__title">
+              Хотите получить бесплатную юридическую консультацию?
+            </h2>
+            <ol class="consultation__list">
+              <li class="consultation__list-item">
+                Скачайте наше
+                <a href="#" class="consultation__list-link" target="_blank"
+                  >приложение Reworld</a
+                >
+                для iOS или Android
+              </li>
+              <li class="consultation__list-item">
+                Посмотрите один из 150 познавательных видеороликов.
+              </li>
+              <li class="consultation__list-item">
+                Введите Ваш номер телефона и с Вами свяжется юрист для
+                консультации
+              </li>
+            </ol>
+          </div>
+          <div class="consultation__store">
+            <a href="#" class="consultation__store-link">
+              <picture>
+                <source srcset="./images/consultation/android-store.webp" type="image/webp">
+                <img
+                src="./images/consultation/android-store.png"
+                width="206"
+                height="72"
+                alt="android-store-icon"
+                loading="lazy"/>
+              </picture>
+            </a>
+            <a href="#" class="consultation__store-link">
+              <picture>
+                <source srcset="./images/consultation/ios-store.webp" type="image/webp">
+                <img
+                  src="./images/consultation/ios-store.png"
+                  width="206"
+                  height="72"
+                  alt="ios-store-icon"
+                  loading="lazy"/>
+              </picture>
+              </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="section-title">Отзывы</h2>
+        <ul class="reviews__nav">
+          <li class="reviews__nav-button" data-nav-id="0">Здравоохранение</li>
+          <li class="reviews__nav-button" data-nav-id="1">Бизнес</li>
+          <li class="reviews__nav-button" data-nav-id="2">Семья</li>
+          <li class="reviews__nav-button" data-nav-id="3">ЖКХ</li>
+          <li class="reviews__nav-button" data-nav-id="4">Недвижимость</li>
+          <li class="reviews__nav-button active" data-nav-id="5">Все</li>
+        </ul>
+
+        <div class="reviews__wrapper">
+          <div class="reviews__slider">
+            <div class="reviews__slider-item" data-nav="0">
+              <div class="reviews__slider-vid">
+                <div class="reviews__slider-vid_pad">
+                  <div class="reviews__slider-vid_inner playbutton-parent">
+                    <picture>
+                      <source srcset="./images/reviews/video-1.webp" type="image/webp">
+                      <img src="./images/reviews/video-1.jpg" alt="review video" width="300" height="210">
+                    </picture>
+                    <div class="reviews__slider-playbutton_shadow">
+                      <button type="button" class="reviews__slider-playbutton playbutton" data-src="https://www.youtube.com/embed/zb7Lq1lBMxc"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="reviews__slider-link"
+                >"Здравоохранение". Длинное название видеоролика в две строки
+                просто длинное</a
+              >
+            </div>
+            <div class="reviews__slider-item" data-nav="1">
+              <div class="reviews__slider-vid">
+                <div class="reviews__slider-vid_pad">
+                  <div class="reviews__slider-vid_inner playbutton-parent">
+                    <picture>
+                      <source srcset="./images/reviews/video-2.webp" type="image/webp">
+                      <img src="./images/reviews/video-2.jpg" alt="review video" width="300" height="210">
+                    </picture>
+                    <div class="reviews__slider-playbutton_shadow">
+                      <button type="button" class="reviews__slider-playbutton playbutton" data-src="https://www.youtube.com/embed/zb7Lq1lBMxc"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="reviews__slider-link"
+                >"Бизнес". Название видеоролика</a
+              >
+            </div>
+            <div class="reviews__slider-item" data-nav="2">
+              <div class="reviews__slider-vid">
+                <div class="reviews__slider-vid_pad">
+                  <div class="reviews__slider-vid_inner playbutton-parent">
+                    <picture>
+                      <source srcset="./images/reviews/video-3.webp" type="image/webp">
+                      <img src="./images/reviews/video-3.jpg" alt="review video" width="300" height="210">
+                    </picture>
+                    <div class="reviews__slider-playbutton_shadow">
+                      <button type="button" class="reviews__slider-playbutton playbutton" data-src="https://www.youtube.com/embed/zb7Lq1lBMxc"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="reviews__slider-link"
+                >"Семья". Длиннове название видеоролика в две строки очень
+                длинное</a
+              >
+            </div>
+            <div class="reviews__slider-item" data-nav="3">
+              <div class="reviews__slider-vid">
+                <div class="reviews__slider-vid_pad">
+                  <div class="reviews__slider-vid_inner playbutton-parent">
+                    <picture>
+                      <source srcset="./images/reviews/video-2.webp" type="image/webp">
+                      <img src="./images/reviews/video-2.jpg" alt="review video" width="300" height="210">
+                    </picture>
+                    <div class="reviews__slider-playbutton_shadow">
+                      <button type="button" class="reviews__slider-playbutton playbutton" data-src="https://www.youtube.com/embed/zb7Lq1lBMxc"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="reviews__slider-link"
+                >"ЖКХ". Длиннове название видеоролика в две строки очень
+                длинное</a
+              >
+            </div>
+            <div class="reviews__slider-item" data-nav="4">
+              <div class="reviews__slider-vid">
+                <div class="reviews__slider-vid_pad">
+                  <div class="reviews__slider-vid_inner playbutton-parent">
+                    <picture>
+                      <source srcset="./images/reviews/video-1.webp" type="image/webp">
+                      <img src="./images/reviews/video-1.jpg" alt="review video" width="300" height="210">
+                    </picture>
+                    <div class="reviews__slider-playbutton_shadow">
+                      <button type="button" class="reviews__slider-playbutton playbutton" data-src="https://www.youtube.com/embed/zb7Lq1lBMxc"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="reviews__slider-link"
+                >"Недвижимость". Длиннове название видеоролика в две строки
+                очень длинное</a
+              >
+            </div>
+            <div class="reviews__slider-item" data-nav="4">
+              <div class="reviews__slider-vid">
+                <div class="reviews__slider-vid_pad">
+                  <div class="reviews__slider-vid_inner playbutton-parent">
+                    <picture>
+                      <source srcset="./images/reviews/video-3.webp" type="image/webp">
+                      <img src="./images/reviews/video-3.jpg" alt="review video" width="300" height="210">
+                    </picture>
+                    <div class="reviews__slider-playbutton_shadow">
+                      <button type="button" class="reviews__slider-playbutton playbutton" data-src="https://www.youtube.com/embed/zb7Lq1lBMxc"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="reviews__slider-link"
+                >"Недвижимость". Длиннове название видеоролика в две строки
+                очень длинное</a
+              >
+            </div>
+          </div>
+          <button type="button" class="arrow reviews-prev">&larr;</button>
+          <button type="button" class="arrow reviews-next">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners" id="partners">
+      <div class="container">
+        <h2 class="section-title">Партнеры Advogrand</h2>
+        <div class="partners__wrapper">
+          <div class="partners__slider">
+            <div class="partners__slider-item">
+              <div class="front">
+                <picture>
+                  <source srcset="./images/partners/logo-1.webp" type="image/webp">
+                  <img
+                  src="./images/partners/logo-1.png"
+                  width="220"
+                  height="140"
+                  alt="logo"
+                  loading="lazy"
+                  class="partners__slider-img"
+                />
+                </picture>
+              </div>
+              <div class="back">
+                <div class="partners__slider-decr">
+                  «Глобэкс» — российский коммерческий банк. Основан в 1992 году.
+                  В 2012 году банк «Глобэкс» вошёл в ежегодный рейтинг
+                  надёжности Forbes. Банк попал в группу «Высокая надёжность»,
+                  заняв 30-е место с рейтингом 4 балла из 5-ти
+                </div>
+              </div>
+            </div>
+            <div class="partners__slider-item">
+              <div class="front">
+                <picture>
+                  <source srcset="./images/partners/logo-2.webp" type="image/webp">
+                  <img
+                  src="./images/partners/logo-2.png"
+                  width="220"
+                  height="140"
+                  alt="logo"
+                  loading="lazy"
+                  class="partners__slider-img"
+                />
+                </picture>
+              </div>
+              <div class="back">
+                <div class="partners__slider-decr">
+                  «Спартак» — российский профессиональный футбольный клуб из
+                  Москвы. Основан 18 апреля 1922 года. Самый популярный
+                  российский клуб по исследованию «Яндекса». Входит в топ-20
+                  самых популярных клубов Европы.
+                </div>
+              </div>
+            </div>
+            <div class="partners__slider-item">
+              <div class="front">
+                <picture>
+                  <source srcset="./images/partners/logo-3.webp" type="image/webp">
+                  <img
+                  src="./images/partners/logo-3.png"
+                  width="220"
+                  height="140"
+                  alt="logo"
+                  loading="lazy"
+                  class="partners__slider-img"
+                />
+                </picture>
+              </div>
+              <div class="back">
+                <div class="partners__slider-decr">
+                  Страховая компания «БИН Страхование» была создана в 1991 году.
+                </div>
+              </div>
+            </div>
+            <div class="partners__slider-item">
+              <div class="front">
+                <picture>
+                  <source srcset="./images/partners/logo-4.webp" type="image/webp">
+                  <img
+                  src="./images/partners/logo-4.png"
+                  width="220"
+                  height="140"
+                  alt="logo"
+                  loading="lazy"
+                  class="partners__slider-img"
+                />
+                </picture>
+              </div>
+              <div class="back">
+                <div class="partners__slider-decr">
+                  Владимир Фонарев возглавляет Digital Emotions — бренд с 20
+                  летней историей. Легенда Российской электронной сцены. На
+                  протяжении многих лет является одним из самых авторитетных
+                  ди-джеев России.
+                </div>
+              </div>
+            </div>
+            <div class="partners__slider-item">
+              <div class="front">
+                <picture>
+                  <source srcset="./images/partners/logo-4.webp" type="image/webp">
+                  <img
+                  src="./images/partners/logo-4.png"
+                  width="220"
+                  height="140"
+                  alt="logo"
+                  loading="lazy"
+                  class="partners__slider-img"
+                />
+                </picture>
+              </div>
+              <div class="back">
+                <div class="partners__slider-decr">
+                  Владимир Фонарев возглавляет Digital Emotions — бренд с 20
+                  летней историей. Легенда Российской электронной сцены. На
+                  протяжении многих лет является одним из самых авторитетных
+                  ди-джеев России.
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="arrow partners-prev">&larr;</button>
+          <button type="button" class="arrow partners-next">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="tariffs" id="tariffs">
+      <div class="container">
+        <h2 class="section-title tariffs__title">Выберите тариф</h2>
+        <div class="tariffs__subtitle">
+          Вы можете оформить карту и начать пользоваться услугами уже сейчас!
+          Оформление займёт всего 10 минут
+        </div>
+        <div class="tariffs__menu">
+          <div class="tariffs__menu-info">
+            Выберите годовую карту, которая Вам подходит:
+          </div>
+          <div class="tariffs__menu-buttons">
+            <span class="tariffs__menu-button">Сравнить тарифы</span>
+            <span class="tariffs__menu-button active">Тарифы</span>
+          </div>
+        </div>
+        <div class="tariffs__list">
+          <div class="tariffs__item">
+            <div class="tariffs__item-title">
+              Персональная карта <br /><span class="tariffs__item-title_bold"
+                >для Вас</span
+              >
+            </div>
+            <picture>
+              <source srcset="./images/tariffs/card-1.webp" type="image/webp">
+              <img
+                src="./images/tariffs/card-1.jpg"
+                width="200"
+                height="126"
+                alt="tariffs-card"
+                loading="lazy"
+                class="tariffs__item-img"
+              />
+            </picture>
+            <ul class="tariffs__item-details">
+              <li class="tariffs__item-detail">
+                <span>Устные консультации</span><span>2 в месяц</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Консультации в отношении 3-х лиц</span
+                ><span>2 в год</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Письменные консультации</span><span>2 в квартал</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Звонок юриста</span><span>1 в год</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Содействие в переговорах</span><span>1 в месяц</span>
+              </li>
+            </ul>
+            <div class="tariffs__item-price">
+              <span>Цена:</span>
+              <span class="tariffs__item-price_bold">65 $ за год</span>
+            </div>
+            <a href="#" class="tariffs__item-personal">Консультация</a>
+            <a href="#" class="tariffs__item-buy">Купить</a>
+          </div>
+          <div class="tariffs__item">
+            <div class="tariffs__item-title">
+              Карта <br /><span class="tariffs__item-title_bold"
+                >для всей семьи</span
+              >
+            </div>
+            <picture>
+              <source srcset="./images/tariffs/card-2.webp" type="image/webp">
+              <img
+                src="./images/tariffs/card-2.jpg"
+                width="200"
+                height="126"
+                alt="tariffs-card"
+                loading="lazy"
+                class="tariffs__item-img"
+              />
+            </picture>
+            <ul class="tariffs__item-details">
+              <li class="tariffs__item-detail">
+                <span>Устные консультации</span><span>2 в месяц</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Консультации в отношении 3-х лиц</span
+                ><span>2 в год</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Письменные консультации</span><span>2 в квартал</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Звонок юриста</span><span>1 в год</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Содействие в переговорах</span><span>1 в месяц</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Сервис для всей семьи</span>
+              </li>
+            </ul>
+            <div class="tariffs__item-price">
+              <span>Цена:</span>
+              <span class="tariffs__item-price_bold">85 $ за год</span>
+            </div>
+            <a href="#" class="tariffs__item-family">Консультация</a>
+            <a href="#" class="tariffs__item-buy">Купить</a>
+          </div>
+          <div class="tariffs__item">
+            <div class="tariffs__item-title">
+              Карта <br /><span class="tariffs__item-title_bold"
+                >для бизнеса</span
+              >
+            </div>
+            <picture>
+              <source srcset="./images/tariffs/card-3.webp" type="image/webp">
+              <img
+                src="./images/tariffs/card-3.jpg"
+                width="200"
+                height="126"
+                alt="tariffs-card"
+                loading="lazy"
+                class="tariffs__item-img"
+              />
+            </picture>
+            <ul class="tariffs__item-details">
+              <li class="tariffs__item-detail">
+                <span>Устные консультации</span><span>2 в месяц</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Консультации в отношении 3-х лиц</span
+                ><span>2 в год</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Письменные консультации</span><span>2 в квартал</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Звонок юриста</span><span>1 в год</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Содействие в переговорах</span><span>1 в месяц</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Бизнес-косультации</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Рекомендуемая модель договора</span>
+              </li>
+              <li class="tariffs__item-detail">
+                <span>Обзор изменения в законодательстве</span>
+              </li>
+            </ul>
+            <div class="tariffs__item-price">
+              <span>Цена:</span>
+              <span class="tariffs__item-price_bold">125 $ за год</span>
+            </div>
+            <a href="#" class="tariffs__item-business">Консультация</a>
+            <a href="#" class="tariffs__item-buy">Купить</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__wrap">
+          <div class="contacts__form">
+            <h3 class="contacts__form-title">
+              Напишите нам письмо или задайте свой вопрос
+            </h3>
+            <form id="main-form">
+              <fieldset class="fieldset name-fieldset">
+                <label for="name" class="contacts__form-name"
+                  >Введите своё имя</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="contacts__form-input"
+                />
+              </fieldset>
+              <fieldset class="fieldset tel-fieldset">
+                <label for="tel">Ваш номер телефона</label>
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  class="contacts__form-input"
+                />
+              </fieldset>
+              <fieldset class="fieldset text-fieldset">
+                <label for="text">Сообщение или вопрос</label>
+                <textarea
+                  id="text"
+                  name="textarea"
+                  class="contacts__form-textarea"
+                ></textarea>
+              </fieldset>
+              <input
+                type="submit"
+                value="Заказать звонок консультанта"
+                class="main-button contacts__form-submit"
+              />
+              <span class="contacts__form-descr"
+                >Перезвоним вам в течении 5 минут</span
+              >
+            </form>
+          </div>
+          <div class="contacts__details">
+            <h2 class="section-title contacts__title">Контакты</h2>
+            <span>Телефон для покупки карт:</span>
+            <a href="tel:+74993228580" class="contacts__details-tel"
+              >+7 499 322-85-80</a
+            >
+            <span>Email:</span>
+            <a href="mailto:info@advogrand.net" class="contacts__details-email"
+              >info@advogrand.net</a
+            >
+            <span>Время работы:</span>
+            <div class="contacts__details-time">
+              С понедельника по пятницу: 9:00 — 22:00
+            </div>
+            <div class="contacts__details-weekend">
+              В праздничные и выходные дни: только телефонные консультации 10:00
+              — 20:00
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <picture>
+          <source srcset="./images/footer-logo.webp" type="image/webp">
+          <img src="./images/footer-logo.png" alt="logo" loading="lazy" width="203" height="43" class="footer__logo" />
+        </picture>
+      </div>
+    </footer>
+
+    <div class="modal js-to-close">
+      <div class="modal-window">
+        <button type="button" class="modal-close js-to-close">&times;</button>
+        <div class="modal-message">Мы вам перезвоним!</div>
+        <form action="#" id="modal-form">
+          <fieldset class="fieldset name-fieldset">
+            <label for="namemodal" class="contacts__form-name"
+              >Введите своё имя</label
+            >
+            <input
+              type="text"
+              id="namemodal"
+              name="namemodal"
+              class="contacts__form-input"
+            />
+          </fieldset>
+          <fieldset class="fieldset tel-fieldset">
+            <label for="telmodal">Ваш номер телефона</label>
+            <input
+              type="tel"
+              id="telmodal"
+              name="telmodal"
+              class="contacts__form-input"
+            />
+          </fieldset>
+          <input
+            type="submit"
+            value="Заказать звонок консультанта"
+            class="main-button contacts__form-submit"
+          />
+        </form>
+      </div>
+    </div>
+
+    <button type="button" class="btn-up" aria-label="button up">
+      <span class="btn-up_symb"></span>
+    </button>
+
+    <!--asyncCss-->
+
+    <script src="./js/main-min.js"></script>
+  </body>
+</html>

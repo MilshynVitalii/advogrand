@@ -1,0 +1,54 @@
+.consultation {
+  padding-bottom: 90px;
+  background: url(../images/consultation/consultation-bg.jpg) no-repeat center;
+  background-size: cover;
+  color: #ffffff;
+  .light(@large-text);
+
+  &__wrap {
+    .row-flex();
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__block {
+    .col();
+    .size(8);
+    .size-sm(12);
+    .sm(margin-bottom, 50px);
+  }
+
+  &__store {
+    .col();
+    .size(4);
+    .size-sm(12);
+    text-align: center;
+
+    &-link {
+      display: inline-block;
+      margin: 15px;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    .sm(text-align, center);
+  }
+
+  &__list {
+    padding-left: 20px;
+    margin: 66px 0 0;
+
+    &-item {
+      padding: 12px 16px;
+
+      &::marker {
+        color: red;
+      }
+    }
+    &-link {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+}

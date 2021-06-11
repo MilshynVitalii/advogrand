@@ -1,0 +1,116 @@
+.contacts {
+  background: linear-gradient(
+    90deg,
+    @gray-color 0%,
+    @gray-color 45%,
+    #ffffff 45%,
+    #ffffff 100%
+  );
+  padding: 0;
+  padding-bottom: 70px;
+  font-size: 14px;
+
+  &__wrap {
+    .row-flex();
+    justify-content: space-between;
+  }
+
+  &__form {
+    .col();
+    .size(4.25);
+    .size-sm(6);
+    .size-xs(12);
+    max-width: 400px;
+    .xs(margin, 0 auto);
+
+    &-title {
+      margin: 70px 0 30px;
+      .bold(@large-text);
+    }
+
+    &-input,
+    &-textarea {
+      width: 100%;
+      padding: 15px;
+      margin-top: 15px;
+      border: 1px solid darken(@gray-color, 15%);
+      border-radius: 5px;
+      outline: none;
+      box-sizing: border-box;
+
+      &.error {
+        border-color: @primary-color;
+      }
+    }
+
+    &-textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    &-submit {
+      width: 100%;
+      outline: none;
+      border: none;
+      margin: 13px 0;
+    }
+
+    &-descr {
+      display: block;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .to(900px, {
+        .size(5);
+    });
+  }
+
+  &__title {
+    text-align: left;
+    margin: 97px 0 70px;
+
+    .sm(text-align, right);
+    .xs(text-align, center);
+  }
+
+  &__details {
+    .col();
+    .size(5);
+    .size-sm(6);
+    .size-xs(12);
+    font-size: 13px;
+
+    &-tel,
+    &-time,
+    &-email,
+    &-weekend {
+      .bold(17px);
+      display: block;
+      max-width: 280px;
+      margin: 15px 0 23px;
+
+      .sm(margin-left, auto);
+      .xs(margin-right, auto);
+    }
+
+    &-time {
+      max-width: 260px;
+    }
+
+    .sm(text-align, right);
+    .xs(text-align, center);
+  }
+
+  .sm(background, none);
+}
+
+.fieldset {
+  position: relative;
+  margin-bottom: 15px;
+
+  .error {
+    color: @primary-color;
+    font-size: 13px;
+  }
+}
