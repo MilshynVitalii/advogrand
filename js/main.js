@@ -17,6 +17,7 @@
 
 $( window ).on("load", function() {
     const $links = $('.header__navigation-link');
+    $links.push($('.intro__button')[0]);
     const $btnUp = $('.btn-up');
     const pxPerSec = 7;
 
@@ -274,7 +275,6 @@ $( window ).on("load", function() {
       e.preventDefault();
       $('.modal-message').addClass('active');
       $('#modal-form').remove();
-      // $(form).ajaxSubmit();
     }
   });
 
