@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "homepage": "https://milshynvitalii.github.io/advogrand/",
+  "homepage": "https://milshynvitalii.github.io/advogrand-deploy/",
   "main": "gulpfile.js",
   "scripts": {
     "watch": "gulp watch --map --sync",

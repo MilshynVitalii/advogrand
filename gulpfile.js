@@ -131,7 +131,7 @@ function grid(done){
 	done();
 }
 
-let build = gulp.series(clean, gulp.parallel(html, styles, images, webpImages, scripts, fonts), criticalCss, replaceCode);
+let build = gulp.series(clean, gulp.parallel(html, styles, images, webpImages, scripts, fonts)/*, criticalCss, replaceCode*/);
 let dev = gulp.series(build, watch);
 
 gulp.task('build', build);
